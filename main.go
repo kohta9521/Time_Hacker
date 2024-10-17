@@ -13,9 +13,9 @@ func main() {
     defer cancel()
 
     // ログインするための変数
-    loginURL := "https://example.com/login" // 勤怠システムのログインURLに変更
-    username := "your-username"             // ここに実際のユーザーIDを入力
-    password := "your-password"             // ここに実際のパスワードを入力
+    loginURL := "http://127.0.0.1:5500/test/attendance.html" // 勤怠システムのログインURLに変更
+    username := "user123"
+    password := "pass123"
 
     // ブラウザでの操作を定義
     var res string
@@ -37,7 +37,7 @@ func main() {
 
     // ログイン後に特定のボタンをクリック
     err = chromedp.Run(ctx,
-        chromedp.Click(`#button-id`), // 勤怠登録ボタン（仮）のクリック
+        chromedp.Click(`#button-id`),
     )
     if err != nil {
         log.Fatal(err)
