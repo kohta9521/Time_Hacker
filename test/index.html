@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ログイン</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>勤怠システム - ログイン</h2>
+      <form id="login-form">
+        <label for="login-id">ユーザーID:</label>
+        <input type="text" id="login-id" name="login-id" required />
+
+        <label for="password">パスワード:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit" id="submit-btn">ログイン</button>
+      </form>
+      <p id="error-message" class="error-message"></p>
+    </div>
+
+    <script src="./js//login.js"></script>
+  </body>
+</html>

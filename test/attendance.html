@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>勤怠入力</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>勤怠入力</h2>
+      <button id="attendance-button">勤怠入力</button>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <button id="clock-in-button">出勤</button>
+        </div>
+      </div>
+
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <h3>確認</h3>
+          <label>
+            <input type="checkbox" id="confirmation-checkbox" />
+            チェックボックスを確認
+          </label>
+          <button id="confirm-button">確定</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js//attendance.js"></script>
+  </body>
+</html>
